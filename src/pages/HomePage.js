@@ -1,8 +1,15 @@
 import React from 'react';
 
+import HeaderText from '../components/HeaderText';
+import Projects from '../components/Projects';
+
 function HomePage(props) {
     return (
-        <p>HomePage works!</p>
+        <div>
+            <HeaderText title={props.title} subTitle={props.subTitle} text={props.text}/>
+            <Projects></Projects>
+        </div>
+        
     )
 }
 
